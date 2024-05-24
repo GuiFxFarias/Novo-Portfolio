@@ -1,16 +1,21 @@
 import { Button } from "@/components/ui/button";
+import FormEmail from "./form";
+import nextjs from "./img/Next-JS.png";
+import react from "./img/React-icon.svg.png";
+import tailwind from "./img/Tailwind_CSS_Logo.svg.png";
+import ts from "./img/ts.png";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between  ">
-      <div className="bg-black text-white min-h-screen w-full py-16 px-10">
-        <nav className="container mx-auto p-0">
-          <h1 className="text-4xl">Guilherme Farias</h1>
-        </nav>
-        <header className="py-10 ">
-          <div className="container bg-yellow-500 mx-auto p-10 rounded text-black">
-            <h1 className="text-4xl font-bold">ABOUT</h1>
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <div className="bg-black text-white min-h-screen w-full px-10 overflow-hidden content-center py-10">
+        <header className="pb-10 ">
+          <div className="container bg-gray-900 mx-auto p-10 rounded text-zinc-50">
+            <div className="flex justify-between">
+              <h1 className="text-4xl font-bold">ABOUT</h1>
+              <h1 className="text-4xl font-bold">Guilherme Farias</h1>
+            </div>
             <h2 className="text-6xl font-extrabold">FRONT-END</h2>
             <p className="mt-4 max-w-2xl">
               Front-end development is a crucial aspect of web development that
@@ -23,33 +28,95 @@ export default function Home() {
           </div>
         </header>
         <main className="container mx-auto p-0 grid grid-cols-4 gap-4">
-          <div className=" rounded h-42">
-            <h3 className="text-2xl text-center font-bold bg-yellow-500 rounded-t-md p-4 text-black">
-              ABOUT
+          <div className="rounded h-56">
+            <h3 className="text-2xl text-center font-bold bg-amarelo-1 rounded-t-md p-4 text-black">
+              CONTACT
             </h3>
-            <p className="p-3 bg-gray-600">Contact me for more details ...</p>
-            <p className="p-2 text-center bg-gray-900 rounded-b-md">
-              <Button className="bg-yellow-500 hover:bg-yellow-600 text-black">
-                Send me email
-              </Button>
+            <div className="p-3 bg-gray-900 h-24 justify-center items-center flex flex-col text">
+              <p className="text-xl">Contact me for more details ...</p>
+              <span className="text-sm text-zinc-300">
+                Front End Developer / UI UX
+              </span>
+            </div>
+            <p className="p-2 text-center flex justify-center items-center bg-gray-900 rounded-b-md border-t-[1px] border-white h-16">
+              <FormEmail />
             </p>
           </div>
-          <div className="p-4 bg-yellow-500 rounded h-42 col-span-2">
-            <h3 className="text-2xl font-bold text-black">GOALS</h3>
-            <p className="mt-2 text-black">Description about the goals...</p>
+          <div className="bg-gray-900 rounded h-56 col-span-2">
+            <h3 className="text-2xl text-center font-bold bg-amarelo-1 rounded-t-md p-4 text-black">
+              TECHNOLOGIES
+            </h3>
+            <div className="p-3 bg-gray-900 h-24 justify-center items-center flex flex-row text space-x-4 px-20">
+              <Image
+                src={nextjs}
+                width={85}
+                height={85}
+                alt="NextJs"
+                className="bg-white p-1 rounded-full"
+              />
+              <Image
+                src={react}
+                width={70}
+                height={70}
+                alt="React"
+                className="p-1"
+              />
+              <Image
+                src={ts}
+                width={60}
+                height={60}
+                alt="Type Script"
+                className="p-1"
+              />
+              <Image
+                src={tailwind}
+                width={70}
+                height={70}
+                alt="Tailwind"
+                className="p-1"
+              />
+            </div>
+            <div className="bg-white w-full h-16 rounded-b-md flex justify-around items-center text-black p-2">
+              <div className="flex flex-col items-center">
+                <p className="font-bold">NextJs</p>
+                <p className="font-medium">
+                  For building structures and websites
+                </p>
+              </div>
+              <div className="flex flex-col items-center">
+                <p className="font-bold">Tailwind CSS</p>
+                <p className="font-medium">
+                  For building the UI and UX of websites
+                </p>
+              </div>
+            </div>
           </div>
-          <div className="p-4 bg-gray-800 rounded h-42 row-span-2">
-            <h3 className="text-2xl font-bold">TECHNOLOGIES</h3>
-            <p className="mt-2">Description about technologies...</p>
+          <div className=" row-span-2 flex flex-col rounded-md">
+            <div className="bg-amarelo-1 justify-around flex flex-col p-4 rounded-t-md h-[50%]">
+              <h3 className="text-2xl font-bold text-black text-center">
+                ABOUT
+              </h3>
+              <div className="bg-gray-900 rounded-md p-2 ">
+                I seek development in a job focused on problem-solving, aimed at
+                smart solutions and facilitating company growth with ease in
+                decision-making
+              </div>
+              <div>
+                <div className="flex bg-zinc-50 justify-center space-x-4 text-black font-bold rounded-md border-b-[1px] border-black shadow-[0px_1px_10px_0px_rgba(0,0,0,0.3)]">
+                  <p className="text-center">Smart Work</p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-zinc-50 p-4 rounded-b-md h-[50%] z-50"></div>
           </div>
-          <div className="col-span-1 p-4 bg-yellow-500 rounded h-42 text-black">
+          <div className="col-span-1 p-4 bg-amarelo-1 rounded h-56 text-black">
             <h3 className="text-2xl font-bold">PROJECTS</h3>
           </div>
-          <div className="p-4 bg-gray-800 rounded h-42 ">
+          <div className="p-4 bg-gray-800 rounded h-56 ">
             <h3 className="text-2xl font-bold">CONTACT</h3>
             <p className="mt-2">Contact information...</p>
           </div>
-          <div className="p-4 bg-gray-800 rounded h-42 ">
+          <div className="p-4 bg-gray-800 rounded h-56 ">
             <h3 className="text-2xl font-bold">CONTACT</h3>
             <p className="mt-2">Contact information...</p>
           </div>
