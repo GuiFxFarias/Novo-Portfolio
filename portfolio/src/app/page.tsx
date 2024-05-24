@@ -5,6 +5,7 @@ import react from "./img/React-icon.svg.png";
 import tailwind from "./img/Tailwind_CSS_Logo.svg.png";
 import ts from "./img/ts.png";
 import Image from "next/image";
+import { CarouselSkills } from "./carroselSkills";
 
 export default function Home() {
   return (
@@ -92,7 +93,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" row-span-2 flex flex-col rounded-md">
-            <div className="bg-amarelo-1 justify-around flex flex-col p-4 rounded-t-md h-[50%]">
+            <div className="bg-amarelo-1 justify-around flex flex-col p-4 rounded-t-md h-[55%]">
               <h3 className="text-2xl font-bold text-black text-center">
                 ABOUT
               </h3>
@@ -107,7 +108,14 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="bg-zinc-50 p-4 rounded-b-md h-[50%] z-50"></div>
+            <div className="h-[45%] bg-zinc-50 border-t-[2px] border-white rounded-b-md">
+              <h1 className="flex-col bg-gray-900 font-bold text-2xl py-4 items-center justify-around flex text-zinc-50">
+                Skills
+              </h1>
+              <div className="flex justify-center items-center h-[68%]">
+                <CarouselSkills />
+              </div>
+            </div>
           </div>
           <div className="col-span-1 p-4 bg-amarelo-1 rounded h-56 text-black">
             <h3 className="text-2xl font-bold">PROJECTS</h3>
