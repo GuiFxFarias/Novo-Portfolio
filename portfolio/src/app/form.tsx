@@ -52,7 +52,7 @@ export default function FormEmail() {
   return (
     <>
       <Dialog>
-        <DialogTrigger className="bg-amarelo-1 hover:bg-yellow-400 text-black p-2 rounded-xl">
+        <DialogTrigger className="bg-amarelo-1 transition-all hover:bg-yellow-400 text-black p-2 rounded-xl">
           Send me email
         </DialogTrigger>
         <DialogContent className="bg-zinc-400 border-none">

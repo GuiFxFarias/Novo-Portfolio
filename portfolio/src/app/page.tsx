@@ -6,6 +6,9 @@ import tailwind from "./img/Tailwind_CSS_Logo.svg.png";
 import ts from "./img/ts.png";
 import Image from "next/image";
 import { CarouselSkills } from "./carroselSkills";
+import RoutineDialog from "./routineDialog";
+import AcadeDialog from "./acadeDialog";
+import DragDropDialog from "./dragdropDialog";
 
 export default function Home() {
   return (
@@ -118,15 +121,37 @@ export default function Home() {
             </div>
           </div>
           <div className="col-span-1 p-4 bg-amarelo-1 rounded h-56 text-black">
-            <h3 className="text-2xl font-bold">PROJECTS</h3>
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="text-2xl font-bold">PROJECT</h2>
+              <h3 className="text-xl text-center font-medium">
+                One project to help with your daily routine
+              </h3>
+            </div>
+            <div className="flex justify-center items-center w-full h-20">
+              <RoutineDialog />
+            </div>
           </div>
-          <div className="p-4 bg-gray-800 rounded h-56 ">
-            <h3 className="text-2xl font-bold">CONTACT</h3>
-            <p className="mt-2">Contact information...</p>
+          <div className="col-span-1 p-4 bg-gray-900 rounded h-56 text-black">
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="text-2xl font-bold text-zinc-50">PROJECT</h2>
+              <h3 className="text-xl text-center font-medium text-zinc-50">
+                A project for managing a group of gyms
+              </h3>
+            </div>
+            <div className="flex justify-center items-center w-full h-20">
+              <AcadeDialog />
+            </div>
           </div>
-          <div className="p-4 bg-gray-800 rounded h-56 ">
-            <h3 className="text-2xl font-bold">CONTACT</h3>
-            <p className="mt-2">Contact information...</p>
+          <div className="col-span-1 p-4 bg-amarelo-1 rounded h-56 text-black">
+            <div className="flex flex-col justify-center items-center">
+              <h2 className="text-2xl font-bold">PROJECT</h2>
+              <h3 className="text-xl text-center font-medium">
+                A project with many APIs for developing applications
+              </h3>
+            </div>
+            <div className="flex justify-center items-center w-full h-20">
+              <DragDropDialog />
+            </div>
           </div>
         </main>
       </div>
