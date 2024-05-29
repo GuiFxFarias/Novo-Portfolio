@@ -1,4 +1,5 @@
 "use client";
+
 import {
   Dialog,
   DialogContent,
@@ -7,6 +8,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+
 export default function DragDropDialog() {
   return (
     <>
@@ -14,7 +16,7 @@ export default function DragDropDialog() {
         <DialogTrigger className="bg-gray-900 w-[70%] text-2xl mt-10 text-zinc-50 hover:bg-yellow-800 p-2 rounded-xl transition-all">
           View a project
         </DialogTrigger>
-        <DialogContent className="bg-zinc-400 border-none"></DialogContent>
+        <DialogContent className="bg-zinc-400 border-none w-[80vw]"></DialogContent>
       </Dialog>
     </>
   );

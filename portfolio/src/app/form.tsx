@@ -21,7 +21,10 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import emailjs from "@emailjs/browser";
 import { Textarea } from "@/components/ui/textarea";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const formSchema = z.object({
   name: z.string().min(2, {
@@ -47,6 +50,48 @@ export default function FormEmail() {
 
   function onSubmit(values: any) {
     console.log(values);
+
+    const templateParams = {
+      from_name: values.name,
+      message: values.message,
+      email: values.message,
+    };
+
+    emailjs
+      .send(
+        "service_vh7tb5b",
+        "template_fi3dxi7",
+        templateParams,
+        "Y5m61D_i3_5IlyitC"
+      )
+      .then(
+        (res: any) => {
+          console.log("Email enviado", res.status, res.text);
+          toast.success("Email enviado", {
+            position: "top-center",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        },
+        (err: any) => {
+          console.log("ERRO: ", err);
+          toast.error("Email nao foi enviado", {
+            position: "top-right",
+            autoClose: 3000,
+            hideProgressBar: true,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        }
+      );
   }
 
   return (
@@ -104,6 +149,7 @@ export default function FormEmail() {
               <Button type="submit">Submit</Button>
             </form>
           </Form>
+          <ToastContainer />
         </DialogContent>
       </Dialog>
     </>
