@@ -13,6 +13,7 @@
     "@cloudinary/url-gen": "^1.19.0",
     "@emailjs/browser": "^4.3.3",
     "@hookform/resolvers": "^3.4.2",
+    "@nextui-org/divider": "^2.0.28",
     "@radix-ui/react-accordion": "^1.1.2",
     "@radix-ui/react-alert-dialog": "^1.0.5",
     "@radix-ui/react-avatar": "^1.0.4",

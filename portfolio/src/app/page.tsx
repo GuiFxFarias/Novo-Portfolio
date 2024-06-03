@@ -122,8 +122,8 @@ export default function Home() {
           </div>
           <div className="col-span-1 p-4 bg-amarelo-1 rounded h-56 text-black">
             <div className="flex flex-col justify-center items-center">
-              <h2 className="text-2xl font-bold">PROJECT</h2>
-              <h3 className="text-xl text-center font-medium">
+              <h2 className="text-2xl font-bold max-lg:text-xl">PROJECT</h2>
+              <h3 className="text-xl max-lg:text-base text-center font-medium">
                 One project to help with your daily routine
               </h3>
             </div>
@@ -133,8 +133,10 @@ export default function Home() {
           </div>
           <div className="col-span-1 p-4 bg-gray-900 rounded h-56 text-black">
             <div className="flex flex-col justify-center items-center">
-              <h2 className="text-2xl font-bold text-zinc-50">PROJECT</h2>
-              <h3 className="text-xl text-center font-medium text-zinc-50">
+              <h2 className="text-2xl font-bold max-lg:text-xl text-zinc-50">
+                PROJECT
+              </h2>
+              <h3 className="text-xl max-lg:text-base text-center font-medium text-zinc-50">
                 A project for managing a group of gyms
               </h3>
             </div>
@@ -144,8 +146,8 @@ export default function Home() {
           </div>
           <div className="col-span-1 p-4 bg-amarelo-1 rounded h-56 text-black">
             <div className="flex flex-col justify-center items-center">
-              <h2 className="text-2xl font-bold">PROJECT</h2>
-              <h3 className="text-xl text-center font-medium">
+              <h2 className="text-2xl font-bold max-lg:text-xl">PROJECT</h2>
+              <h3 className="text-xl max-lg:text-base text-center font-medium">
                 A project with many APIs for developing applications
               </h3>
             </div>
