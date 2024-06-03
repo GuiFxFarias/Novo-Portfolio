@@ -26,10 +26,10 @@ export default function DragDropDialog() {
             </p>
             <p className="mb-4 mt-2">
               Para a criação deste site foi utilizado alguns componentes do
-              "HelloPangea" pois, esta biblioteca que proporciona o
-              funcionamento do Drag and Drop. Com isso, foi criado um servidor
-              utilizando o json.server, já que esta biblioteca disponiboliza um
-              servidor local para fazermos requisições via API.
+              HelloPangea pois, esta biblioteca que proporciona o funcionamento
+              do Drag and Drop. Com isso, foi criado um servidor utilizando o
+              json.server, já que esta biblioteca disponiboliza um servidor
+              local para fazermos requisições via API.
             </p>
             <div className="mr-4 space-y-2">
               <Image
