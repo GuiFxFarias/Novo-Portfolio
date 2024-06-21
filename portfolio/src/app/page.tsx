@@ -9,18 +9,21 @@ import { CarouselSkills } from "./carroselSkills";
 import RoutineDialog from "./routineDialog";
 import AcadeDialog from "./acadeDialog";
 import DragDropDialog from "./dragdropDialog";
+import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="bg-black text-white min-h-screen w-full px-10 overflow-hidden content-center py-10">
-        <header className="pb-10 ">
-          <div className="container bg-gray-900 mx-auto p-10 rounded text-zinc-50">
-            <div className="flex justify-between">
-              <h1 className="text-4xl font-bold">ABOUT</h1>
-              <h1 className="text-4xl font-bold">Guilherme Farias</h1>
+      <div className="bg-black text-white min-h-screen w-full px-10 max-lg:p-4 overflow-hidden content-center py-10">
+        <header className="pb-10 max-lg:pb-4">
+          <div className="container bg-gray-900 mx-auto p-10 max-lg:p-4 rounded text-zinc-50">
+            <div className="flex justify-between max-lg:flex-col">
+              <h1 className="text-4xl font-bold max-lg:hidden ">ABOUT</h1>
+              <h1 className="text-4xl font-bold max-lg:mb-4">
+                Guilherme Farias
+              </h1>
             </div>
-            <h2 className="text-6xl font-extrabold">FRONT-END</h2>
+            <h2 className="text-6xl font-extrabold">FRONT END</h2>
             <p className="mt-4 max-w-2xl">
               Front-end development is a crucial aspect of web development that
               focuses on the design and interaction layer of websites and
@@ -31,8 +34,8 @@ export default function Home() {
             </p>
           </div>
         </header>
-        <main className="container mx-auto p-0 grid grid-cols-4 gap-4">
-          <div className="rounded h-56">
+        <main className="container mx-auto p-0 grid grid-cols-4 gap-4 max-lg:grid-cols-1">
+          <div className="rounded h-56  max-lg:col-span-1">
             <h3 className="text-2xl text-center font-bold bg-amarelo-1 rounded-t-md p-4 text-black">
               CONTACT
             </h3>
@@ -42,15 +45,15 @@ export default function Home() {
                 Front End Developer / UI UX
               </span>
             </div>
-            <p className="p-2 text-center flex justify-center items-center bg-gray-900 rounded-b-md border-t-[1px] border-white h-16">
+            <p className="p-2 text-center flex justify-center items-center bg-gray-900 rounded-b-md border-t-[1px] border-white h-16 ">
               <FormEmail />
             </p>
           </div>
-          <div className="bg-gray-900 rounded h-56 col-span-2">
+          <div className="bg-gray-900 rounded h-72 col-span-2 max-lg:col-span-1">
             <h3 className="text-2xl text-center font-bold bg-amarelo-1 rounded-t-md p-4 text-black">
               TECHNOLOGIES
             </h3>
-            <div className="p-3 bg-gray-900 h-24 justify-center items-center flex flex-row text space-x-4 px-20">
+            <div className="p-3 bg-gray-900 h-32 justify-center items-center flex flex-row text max-lg:pl-15 max-lg:pr-2 space-x-4 px-20 max-lg:overflow-y-auto">
               <Image
                 src={nextjs}
                 width={85}
@@ -80,14 +83,15 @@ export default function Home() {
                 className="p-1"
               />
             </div>
-            <div className="bg-white w-full h-16 rounded-b-md flex justify-around items-center text-black p-2">
-              <div className="flex flex-col items-center">
+            <div className="bg-white w-full max-lg:col-span-1 h-24 rounded-b-md flex justify-around items-center text-black p-2 ">
+              <div className="flex flex-col items-center max-lg:p-1 max-lg:text-sm">
                 <p className="font-bold">NextJs</p>
                 <p className="font-medium">
                   For building structures and websites
                 </p>
               </div>
-              <div className="flex flex-col items-center">
+              <Separator orientation="vertical" />
+              <div className="flex flex-col items-center max-lg:p-1 max-lg:text-sm">
                 <p className="font-bold">Tailwind CSS</p>
                 <p className="font-medium">
                   For building the UI and UX of websites
@@ -95,8 +99,8 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className=" row-span-2 flex flex-col rounded-md">
-            <div className="bg-amarelo-1 justify-around flex flex-col p-4 rounded-t-md h-[55%]">
+          <div className=" row-span-2 max-lg:col-span-1 flex flex-col rounded-md">
+            <div className="bg-amarelo-1 justify-around flex flex-col p-4 rounded-t-md h-[55%] max-lg:h-[65%]">
               <h3 className="text-2xl font-bold text-black text-center">
                 ABOUT
               </h3>
@@ -111,7 +115,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div className="h-[45%] bg-zinc-50 border-t-[2px] border-white rounded-b-md">
+            <div className="h-[45%] max-lg:h-[20vh] bg-zinc-50 border-t-[2px] border-white rounded-b-md">
               <h1 className="flex-col bg-gray-900 font-bold text-2xl py-4 items-center justify-around flex text-zinc-50">
                 Skills
               </h1>
