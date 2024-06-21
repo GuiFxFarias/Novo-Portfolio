@@ -35,17 +35,17 @@ export default function Home() {
           </div>
         </header>
         <main className="container mx-auto p-0 grid grid-cols-4 gap-4 max-lg:grid-cols-1">
-          <div className="rounded h-56  max-lg:col-span-1">
+          <div className="rounded h-56 max-lg:col-span-1">
             <h3 className="text-2xl text-center font-bold bg-amarelo-1 rounded-t-md p-4 text-black">
               CONTACT
             </h3>
-            <div className="p-3 bg-gray-900 h-24 justify-center items-center flex flex-col text">
+            <div className="p-3 bg-gray-900 h-32 max-lg:h-24 justify-center items-center flex flex-col text">
               <p className="text-xl">Contact me for more details ...</p>
               <span className="text-sm text-zinc-300">
                 Front End Developer / UI UX
               </span>
             </div>
-            <p className="p-2 text-center flex justify-center items-center bg-gray-900 rounded-b-md border-t-[1px] border-white h-16 ">
+            <p className="p-2 text-center flex justify-center items-center bg-gray-900 rounded-b-md border-t-[1px] border-white h-24 max-lg:h-16">
               <FormEmail />
             </p>
           </div>
